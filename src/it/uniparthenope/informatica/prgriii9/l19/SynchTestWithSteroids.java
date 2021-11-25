@@ -1,6 +1,7 @@
 package it.uniparthenope.informatica.prgriii9.l19;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SynchTestWithSteroids {
     public static void main(String[] args) {
@@ -8,8 +9,8 @@ public class SynchTestWithSteroids {
         int items = 500;
         int nP = 5;
         int nC = 5;
-        ArrayList<Producer> producers = new ArrayList<Producer>();
-        ArrayList<Consumer> consumers = new ArrayList<Consumer>();
+        List<Producer> producers = new ArrayList<Producer>();
+        List<Consumer> consumers = new ArrayList<Consumer>();
 
         for (int i=0;i<nP;i++) {
             Producer p = new Producer(stack,items);
