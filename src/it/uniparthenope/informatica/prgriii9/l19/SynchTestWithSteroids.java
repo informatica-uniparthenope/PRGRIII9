@@ -9,8 +9,6 @@ public class SynchTestWithSteroids {
         int items = 500;
         int nP = 5;
         int nC = 5;
-        List<Producer> producers = new ArrayList<Producer>();
-        List<Consumer> consumers = new ArrayList<Consumer>();
 
         for (int i=0;i<nP;i++) {
             Producer p = new Producer(stack,items);
